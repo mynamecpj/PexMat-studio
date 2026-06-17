@@ -16,7 +16,7 @@ It deeply integrates state‑of‑the‑art AI vision models, providing a zero�
     <td align="center" style="border: none;"><b>Matting</b></td>
   </tr>
   <tr style="border: none;">
-    <td align="center" style="border: none;"><img src="assets/sample1.gif" width="360" height="115" alt="Feature A demo"></td>
+    <td align="center" style="border: none;"><img src="assets/sample1.gif" width="360" height="200" alt="Feature A demo"></td>
     <td align="center" style="border: none;"><img src="assets/sample2.gif" width="360" alt="Feature B demo"></td>
   </tr>
   <tr style="border: none;">
@@ -176,7 +176,7 @@ The third‑party AI models integrated in this project may be subject to their o
     <td align="center" style="border: none;"><b>抠图</b></td>
   </tr>
   <tr style="border: none;">
-    <td align="center" style="border: none;"><img src="assets/sample1.gif" width="360" height="115" alt="展示功能A"></td>
+    <td align="center" style="border: none;"><img src="assets/sample1.gif" width="360" height="200" alt="展示功能A"></td>
     <td align="center" style="border: none;"><img src="assets/sample2.gif" width="360" alt="展示功能B"></td>
   </tr>
   <tr style="border: none;">
