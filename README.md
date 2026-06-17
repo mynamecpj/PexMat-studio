@@ -27,6 +27,14 @@ It deeply integrates state‑of‑the‑art AI vision models, providing a zero�
     <td align="center"><img src="assets/sample3.gif" width="400" height="200" alt="Feature C demo"></td>
     <td align="center"><img src="assets/sample4.gif" width="400" height="200" alt="Feature D demo"></td>
   </tr>
+  <tr>
+    <td align="center"><b>Interface Demo 1</b></td>
+    <td align="center"><b>Interface Demo 2</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/演示.gif" width="450" height="280" alt="Interface Demo 1"></td>
+    <td align="center"><img src="assets/演示2.gif" width="450" height="280" alt="Interface Demo 2"></td>
+  </tr>
 </table>
 
 ---
@@ -174,6 +182,14 @@ The third‑party AI models integrated in this project may be subject to their o
     <td align="center"><img src="assets/sample3.gif" width="400" height="200" alt="展示功能C"></td>
     <td align="center"><img src="assets/sample4.gif" width="400" height="200" alt="展示功能D"></td>
   </tr>
+  <tr>
+<td align="center"><b>界面演示 1</b></td>
+<td align="center"><b>界面演示 2</b></td>
+</tr>
+<tr>
+<td align="center"><img src="assets/演示.gif" width="450" height="280" alt="界面演示 1"></td>
+<td align="center"><img src="assets/演示2.gif" width="450" height="280" alt="界面演示 2"></td>
+</tr>
 </table>
 
 
