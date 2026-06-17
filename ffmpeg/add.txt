@@ -1,0 +1,3 @@
+ffprobe.exe
+ffmpeg.exe
+Add these two files to the folder
