@@ -5,7 +5,7 @@
 ![PySide6](https://img.shields.io/badge/GUI-PySide6-red.svg)
 
 <details open>
-<summary><b>🇬🇧 English</b></summary>
+<summary><b>English</b></summary>
 
 **PexMat Studio** is an open‑source audio, video, and image processing workstation.  
 It deeply integrates state‑of‑the‑art AI vision models, providing a zero‑threshold, one‑stop workflow from **hair‑level intelligent matting**, **video object selection, tracking & segmentation**, and **lossless upscaling & enhancement** to **infinite‑layer creative compositing**.
@@ -152,7 +152,7 @@ The third‑party AI models integrated in this project may be subject to their o
 
 </details>
 <details>
-<summary><b>🇨🇳 中文</b></summary>
+<summary><b>中文</b></summary>
 
 **PexMat Studio** 是一款开源的音视频与图像综合处理工作台。
 本项目将目前AI视觉模型深度结合，提供从**发丝级智能抠图**、**视频对象选择追踪分割**、**画质超分增强**到**无限图层创意拼接**的一站式零门槛工作流。
