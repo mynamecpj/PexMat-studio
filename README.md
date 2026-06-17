@@ -1,6 +1,6 @@
 # 🎬 PexMat Studio
 
-![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-green.svg)
 ![PySide6](https://img.shields.io/badge/GUI-PySide6-red.svg)
 
@@ -10,30 +10,24 @@
 **PexMat Studio** is an open‑source audio, video, and image processing workstation.  
 It deeply integrates state‑of‑the‑art AI vision models, providing a zero‑threshold, one‑stop workflow from **hair‑level intelligent matting**, **video object selection, tracking & segmentation**, and **lossless upscaling & enhancement** to **infinite‑layer creative compositing**.
 
-<div style="display: flex; flex-direction: column; gap: 20px;">
-  <!-- Row 1: two "Matting" GIFs -->
-  <div style="display: flex; gap: 20px; justify-content: center;">
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">Matting</div>
-      <img src="assets/sample1.gif" width="300" height="200" alt="Feature A demo">
-    </div>
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">Matting</div>
-      <img src="assets/sample2.gif" width="400" height="200" alt="Feature B demo">
-    </div>
-  </div>
-  <!-- Row 2: left "Enhancement", right "Video Matting" -->
-  <div style="display: flex; gap: 20px; justify-content: center;">
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">Enhancement</div>
-      <img src="assets/sample3.gif" width="400" height="200" alt="Feature C demo">
-    </div>
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">Video Matting</div>
-      <img src="assets/sample4.gif" width="400" height="200" alt="Feature D demo">
-    </div>
-  </div>
-</div>
+<table align="center">
+  <tr>
+    <td align="center"><b>Matting</b></td>
+    <td align="center"><b>Matting</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/sample1.gif" width="300" height="200" alt="Feature A demo"></td>
+    <td align="center"><img src="assets/sample2.gif" width="400" height="200" alt="Feature B demo"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Enhancement</b></td>
+    <td align="center"><b>Video Matting</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/sample3.gif" width="400" height="200" alt="Feature C demo"></td>
+    <td align="center"><img src="assets/sample4.gif" width="400" height="200" alt="Feature D demo"></td>
+  </tr>
+</table>
 
 ---
 
@@ -77,15 +71,19 @@ This software utilizes the following top‑tier open‑source AI models and fram
 ### Requirements
 *   Python 3.10 or higher  
 *   Image matting is CPU‑friendly  
-*   For the best experience, an NVIDIA GPU with CUDA support (RTX 4060 or above) is recommended. 12 GB of RAM or more is suggested for 1080p and higher.
+*   For the best experience, an NVIDIA GPU with CUDA support (RTX 4060 or above) is recommended.cuda>=12.1,NVIDIA Driver Version>=591.44. 12GB of RAM or more is suggested for 1080p and higher.
 
 ### Running the Software
 
 **Method 1: Use the portable version (Recommended)**
 
-If you prefer not to set up an environment, simply download our pre‑packaged Windows version, extract it, and double‑click the executable:
+If you prefer not to set up an environment, simply download our pre‑packaged Windows version,three folder, extract it, and double‑click the executable,NVIDIA Driver Version>=591.44,cuda>=12.1:
 
-[👉 Download PexMat-Studio]()
+[PexMat.exe](https://github.com/mynamecpj/PexMat-studio/releases/download/v1.0.0/PexMat.exe)
+
+[PexMat-1.bin](https://github.com/mynamecpj/PexMat-studio/releases/download/v1.0.0/PexMat-1.bin)
+
+[PexMat-2.bin](https://github.com/mynamecpj/PexMat-studio/releases/download/v1.0.0/PexMat-2.bin)
 
 **Method 2: Run from source**
 
@@ -111,12 +109,30 @@ Install the remaining libraries:
 ```bash
 pip install -r requirements.txt
 ```
+
+Download ffmpeg.exe and ffprobe.exe from [FFmpeg-Builds releases](https://github.com/BtbN/FFmpeg-Builds/releases) (choose the version without "shared", i.e. the static build), place the two .exe files into the ffmpeg folder, and put the mpv library file libmpv-2.dll (from this [link](https://sourceforge.net/projects/mpv-player-windows/files/libmpv/)) in the same directory as main.py.
+
 Start the application:
 ```bash
 python main.py
 ```
-Note: The first time you run from source, the necessary pre‑trained model weights must be downloaded and placed in the checkpoints directory. You can find them on their respective GitHub repositories, or download our consolidated weight package:
-[📦 Download Model Weights Package]()
+Note: Before first run, download the required pretrained model weights and put them in the checkpoints/ folder. Get them from each model's GitHub repo. Place BiRefNet weights inside BiRefNet_local/. File names are as follows:
+
+[matanyone2.pth](https://github.com/pq-yang/MatAnyone2/releases)
+
+[sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt)
+
+[sam2.1_hiera_small.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt)
+
+[yolo26s.pt](https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26s.pt)
+
+[MEMatte_ViTB_DIM.pth](https://github.com/linyiheng123/MEMatte)
+
+[RealESRGAN_x4plus_anime_6B.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth)
+
+[RealESRGAN_x4plus.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth)
+
+[BiRefNet_local folder](https://huggingface.co/ZhengPeng7/BiRefNet)
 
 ### Packaging the Software
 If you modify the source code and wish to package the PySide6 application yourself, run the following in the project root directory:
@@ -125,7 +141,11 @@ python ImageVideoToolbox.spec
 ```
 
 ### 📜 License
-The code of this project is open‑sourced under the Apache License 2.0. You are free to use, modify, and distribute the code, even for commercial purposes, provided that the original license notice is included.
+This project is open-sourced under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+
+You are free to use, modify, and distribute the code, even for commercial purposes. However, you must comply with the following key conditions:
+- If you distribute modified versions, or if you offer the software as a **network service (e.g., SaaS)**, you **must** make your complete source code available under the same AGPL-3.0 license.
+- You must retain the original copyright and license notices.
 
 ### ⚠️ Important Notice:
 The third‑party AI models integrated in this project may be subject to their own open‑source licenses. If you intend to use this project for commercial purposes, please verify and comply with the respective licenses of the original model authors.
@@ -137,30 +157,24 @@ The third‑party AI models integrated in this project may be subject to their o
 **PexMat Studio** 是一款开源的音视频与图像综合处理工作台。
 本项目将目前AI视觉模型深度结合，提供从**发丝级智能抠图**、**视频对象选择追踪分割**、**画质超分增强**到**无限图层创意拼接**的一站式零门槛工作流。
 
-<div style="display: flex; flex-direction: column; gap: 20px;">
-  <!-- 第一行：两个“抠图” GIF -->
-  <div style="display: flex; gap: 20px; justify-content: center;">
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">抠图</div>
-      <img src="assets/sample1.gif" width="300" height="200" alt="展示功能A">
-    </div>
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">抠图</div>
-      <img src="assets/sample2.gif" width="400" height="200" alt="展示功能B">
-    </div>
-  </div>
-  <!-- 第二行：左侧“增强”，右侧“视频抠图” -->
-  <div style="display: flex; gap: 20px; justify-content: center;">
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">增强</div>
-      <img src="assets/sample3.gif" width="400" height="200" alt="展示功能C">
-    </div>
-    <div style="text-align: center;">
-      <div style="margin-bottom: 8px; font-weight: bold;">视频抠图</div>
-      <img src="assets/sample4.gif" width="400" height="200" alt="展示功能D">
-    </div>
-  </div>
-</div>
+<table align="center">
+  <tr>
+    <td align="center"><b>抠图</b></td>
+    <td align="center"><b>抠图</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/sample1.gif" width="300" height="200" alt="展示功能A"></td>
+    <td align="center"><img src="assets/sample2.gif" width="400" height="200" alt="展示功能B"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>增强</b></td>
+    <td align="center"><b>视频抠图</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/sample3.gif" width="400" height="200" alt="展示功能C"></td>
+    <td align="center"><img src="assets/sample4.gif" width="400" height="200" alt="展示功能D"></td>
+  </tr>
+</table>
 
 
 ---
@@ -205,15 +219,19 @@ The third‑party AI models integrated in this project may be subject to their o
 ### 环境要求
 *   Python 3.10 或更高版本
 *   图像抠图cpu友好支持
-*   推荐使用具备 CUDA 加速的 Nvidia 显卡（RTX4060以上）以获得最佳体验，1080p以上推荐内存12G。
+*   推荐使用具备 CUDA 加速的 Nvidia 显卡（RTX4060以上）以获得最佳体验，cuda>=12.1,NVIDIA驱动版本>=591.44,1080p以上推荐内存12G。
 
 
 ### 运行软件
 *方法一：直接使用免安装版（推荐）*
 
-如果你不想配置环境，可以直接下载我们windows版本已经打包好的软件，解压双击exe即用：
+如果你不想配置环境，可以直接下载我们windows版本三个文件已经打包好的软件，解压双击exe即用,NVIDIA Driver Version>=591.44,cuda>=12.1：
 
-[👉 下载 PexMat-Studio]()
+[PexMat.exe](https://github.com/mynamecpj/PexMat-studio/releases/download/v1.0.0/PexMat.exe)
+
+[PexMat-1.bin](https://github.com/mynamecpj/PexMat-studio/releases/download/v1.0.0/PexMat-1.bin)
+
+[PexMat-2.bin](https://github.com/mynamecpj/PexMat-studio/releases/download/v1.0.0/PexMat-2.bin)
 
 *方法二：通过源码运行*
 
@@ -239,13 +257,29 @@ python -m pip install -e . --no-build-isolation
 ```bash
 pip install -r requirements.txt
 ```
+加入[ffmpeg.exe](https://github.com/BtbN/FFmpeg-Builds/releases)和[ffprobe.exe](https://github.com/BtbN/FFmpeg-Builds/releases)找到没有shared的版本下载，将里面的两个exe放入到文件夹ffmpeg，在main.py同目录加入mpv库的文件[libmpv-2.dll](https://sourceforge.net/projects/mpv-player-windows/files/libmpv/)
+
 运行以下命令启动：
 ```bash
 python main.py
 ```
-注： 首次源码运行需要下载必要的预训练模型权重，并放入 checkpoints 目录。你可以到各自的 GitHub 仓库寻找，或者直接下载我们整理好的完整权重包：
+注：首次源码运行需要下载必要的预训练模型权重，并放入 checkpoints 目录,你可以到各自的 GitHub 仓库寻找,其中BiRefNet_local文件夹放入BiRefNet模型，下面是各自文件名：
 
-[📦 下载模型权重包](https://这里替换成你的真实链接地址.com)
+[matanyone2.pth](https://github.com/pq-yang/MatAnyone2/releases)
+
+[sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt)
+
+[sam2.1_hiera_small.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_small.pt)
+
+[yolo26s.pt](https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26s.pt)
+
+[MEMatte_ViTB_DIM.pth](https://github.com/linyiheng123/MEMatte)
+
+[RealESRGAN_x4plus_anime_6B.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth)
+
+[RealESRGAN_x4plus.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth)
+
+[BiRefNet_local文件](https://huggingface.co/ZhengPeng7/BiRefNet)
 
 ### 打包软件
 如果你修改了源码并希望自行打包 PySide6 应用，请在项目主目录下运行：
@@ -254,7 +288,11 @@ python ImageVideoToolbox.spec
 ```
 
 ### 📜 开源协议 (License)
-**本项目代码采用 Apache License 2.0 协议开源。你可以自由地使用、修改和分发代码，甚至用于商业用途，但需附带原始许可声明。**
+**本项目代码采用 **GNU Affero General Public License v3.0（AGPL-3.0）** 协议开源。
+
+你可以自由地使用、修改和分发本项目代码，甚至用于商业用途。但你必须遵守以下核心条件：
+- 如果你分发了修改后的版本，或者通过**网络服务（如 SaaS）**对外提供本项目功能，你**必须**将你的完整源代码以相同的 AGPL-3.0 协议公开。
+- 你必须保留原始的版权声明和许可证声明。**
 
 ### ⚠️ 重要声明：
 ***本项目内集成的第三方 AI 模型，可能受其各自开源协议的约束。若将本项目用于商业用途，请务必自行核实并遵守对应模型原始作者的 License。***
