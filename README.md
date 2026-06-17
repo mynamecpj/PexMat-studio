@@ -16,26 +16,27 @@ It deeply integrates state‑of‑the‑art AI vision models, providing a zero�
     <td align="center"><b>Matting</b></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/sample1.gif" width="300" height="200" alt="Feature A demo"></td>
-    <td align="center"><img src="assets/sample2.gif" width="400" height="200" alt="Feature B demo"></td>
+    <td align="center"><img src="assets/sample1.gif" width="360" alt="Feature A demo"></td>
+    <td align="center"><img src="assets/sample2.gif" width="360" alt="Feature B demo"></td>
   </tr>
   <tr>
     <td align="center"><b>Enhancement</b></td>
     <td align="center"><b>Video Matting</b></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/sample3.gif" width="400" height="200" alt="Feature C demo"></td>
-    <td align="center"><img src="assets/sample4.gif" width="400" height="200" alt="Feature D demo"></td>
+    <td align="center"><img src="assets/sample3.gif" width="360" alt="Feature C demo"></td>
+    <td align="center"><img src="assets/sample4.gif" width="360" alt="Feature D demo"></td>
   </tr>
   <tr>
     <td align="center"><b>Interface Demo 1</b></td>
     <td align="center"><b>Interface Demo 2</b></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/演示.gif" width="450" height="280" alt="Interface Demo 1"></td>
-    <td align="center"><img src="assets/演示2.gif" width="450" height="280" alt="Interface Demo 2"></td>
+    <td align="center"><img src="assets/演示.gif" width="360" alt="Interface Demo 1"></td>
+    <td align="center"><img src="assets/演示2.gif" width="360" alt="Interface Demo 2"></td>
   </tr>
 </table>
+
 
 ---
 
@@ -166,32 +167,31 @@ The third‑party AI models integrated in this project may be subject to their o
 本项目将目前AI视觉模型深度结合，提供从**发丝级智能抠图**、**视频对象选择追踪分割**、**画质超分增强**到**无限图层创意拼接**的一站式零门槛工作流。
 
 <table align="center">
-  <tr>
-    <td align="center"><b>抠图</b></td>
-    <td align="center"><b>抠图</b></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/sample1.gif" width="300" height="200" alt="展示功能A"></td>
-    <td align="center"><img src="assets/sample2.gif" width="400" height="200" alt="展示功能B"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>增强</b></td>
-    <td align="center"><b>视频抠图</b></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/sample3.gif" width="400" height="200" alt="展示功能C"></td>
-    <td align="center"><img src="assets/sample4.gif" width="400" height="200" alt="展示功能D"></td>
-  </tr>
-  <tr>
+<tr>
+<td align="center"><b>抠图</b></td>
+<td align="center"><b>抠图</b></td>
+</tr>
+<tr>
+<td align="center"><img src="assets/sample1.gif" width="360" alt="展示功能A"></td>
+<td align="center"><img src="assets/sample2.gif" width="360" alt="展示功能B"></td>
+</tr>
+<tr>
+<td align="center"><b>增强</b></td>
+<td align="center"><b>视频抠图</b></td>
+</tr>
+<tr>
+<td align="center"><img src="assets/sample3.gif" width="360" alt="展示功能C"></td>
+<td align="center"><img src="assets/sample4.gif" width="360" alt="展示功能D"></td>
+</tr>
+<tr>
 <td align="center"><b>界面演示 1</b></td>
 <td align="center"><b>界面演示 2</b></td>
 </tr>
 <tr>
-<td align="center"><img src="assets/演示.gif" width="450" height="280" alt="界面演示 1"></td>
-<td align="center"><img src="assets/演示2.gif" width="450" height="280" alt="界面演示 2"></td>
+<td align="center"><img src="assets/演示.gif" width="360" alt="界面演示 1"></td>
+<td align="center"><img src="assets/演示2.gif" width="360" alt="界面演示 2"></td>
 </tr>
 </table>
-
 
 ---
 
